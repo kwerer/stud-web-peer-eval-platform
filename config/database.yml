@@ -1,0 +1,22 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: sutd-web-peer-eval-platform-db-development
+  pool: 5
+  host: localhost
+  username: postgres
+  password: qWer1@34
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: sutd-web-peer-eval-platform-db-test
+  pool: 5
+  username: postgres
+  password: qWer1@34
+
+staging:
+  url: <%= ENV['DATABASE_URL'] %>
+
+production:
+  url: <%= ENV['DATABASE_URL'] %>

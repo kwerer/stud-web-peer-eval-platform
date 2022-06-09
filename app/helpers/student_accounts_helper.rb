@@ -1,0 +1,2 @@
+module StudentAccountsHelper
+end
